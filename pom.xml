@@ -11,7 +11,7 @@
 
 	<groupId>mx.com.beethub.receipt</groupId>
 	<artifactId>receipt-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.4</version>
 	<name>receipt-api</name>
 	<description>receipt spring boot project</description>
 
