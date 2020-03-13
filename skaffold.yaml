@@ -1,8 +1,6 @@
 apiVersion: skaffold/v1beta2
 kind: Config
 build:
-  insecureRegistries:
-  - '{{.DOCKER_REGISTRY}}'
   artifacts:
   - image: beethub/receipt-api
     context: .
