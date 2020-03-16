@@ -56,7 +56,7 @@ resources:
     cpu: 500m
     memory: 512Mi
   requests:
-    cpu: 400m
+    cpu: 300m
     memory: 512Mi
 probePath: /actuator/health
 livenessProbe:
@@ -79,13 +79,13 @@ ingress:
 # values we use from the `jx-requirements.yml` file if we are using helmfile and helm 3
 jxRequirements:
   ingress:
-    domain: ""
+    domain: apps.beethub.com.mx
     externalDNS: false
-    namespaceSubDomain: -jx.
+    namespaceSubDomain: trn.
     tls:
-      email: ""
-      enabled: false
-      production: false
+      email: contacto.beet@gmail.com
+      enabled: true
+      production: true
 
     # For Kubernetes v1.14+, use 'networking.k8s.io/v1beta1'
     apiVersion: "extensions/v1beta1"
