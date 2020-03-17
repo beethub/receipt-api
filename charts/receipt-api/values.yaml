@@ -79,9 +79,9 @@ ingress:
 # values we use from the `jx-requirements.yml` file if we are using helmfile and helm 3
 jxRequirements:
   ingress:
-    domain: apps.beethub.com.mx
+    domain: trn.beethub.com.mx
     externalDNS: false
-    namespaceSubDomain: trn.
+    namespaceSubDomain: .
     tls:
       email: contacto.beet@gmail.com
       enabled: true
