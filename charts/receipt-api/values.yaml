@@ -79,13 +79,13 @@ ingress:
 # values we use from the `jx-requirements.yml` file if we are using helmfile and helm 3
 jxRequirements:
   ingress:
-    domain: trn.beethub.com.mx
+    domain: ""
     externalDNS: false
-    namespaceSubDomain: .
+    namespaceSubDomain: -jx.
     tls:
-      email: contacto.beet@gmail.com
-      enabled: true
-      production: true
+      email: ""
+      enabled: false
+      production: false
 
     # For Kubernetes v1.14+, use 'networking.k8s.io/v1beta1'
     apiVersion: "extensions/v1beta1"

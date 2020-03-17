@@ -8,16 +8,6 @@ expose:
     http: true
     tlsacme: false
 
-jxRequirements:
-  ingress:
-    domain: ""
-    externalDNS: false
-    namespaceSubDomain: -jx.
-    tls:
-      email: ""
-      enabled: false
-      production: false
-
 cleanup:
   Args:
     - --cleanup
