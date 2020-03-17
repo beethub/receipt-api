@@ -77,15 +77,15 @@ ingress:
 #      kubernetes.io/ingress.class: nginx
 
 # values we use from the `jx-requirements.yml` file if we are using helmfile and helm 3
-jxRequirements:
-  ingress:
-    domain: ""
-    externalDNS: false
-    namespaceSubDomain: -jx.
-    tls:
-      email: ""
-      enabled: false
-      production: false
+#jxRequirements:
+#  ingress:
+#    domain: ""
+#    externalDNS: false
+#    namespaceSubDomain: -jx.
+#    tls:
+#      email: ""
+#      enabled: false
+#      production: false
 
     # For Kubernetes v1.14+, use 'networking.k8s.io/v1beta1'
     apiVersion: "extensions/v1beta1"
