@@ -16,6 +16,15 @@ cleanup:
     helm.sh/hook-delete-policy: hook-succeeded
 
 preview:
+  jxRequirements:
+    ingress:
+      domain: ""
+      externalDNS: false
+      namespaceSubDomain: -jx.
+      tls:
+        email: ""
+        enabled: false
+        production: false
   image:
     repository:
     tag:
