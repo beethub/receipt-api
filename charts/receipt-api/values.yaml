@@ -9,7 +9,8 @@ image:
 
 # define environment variables here as a map of key: value
 env:
-
+  DB_NAME: receipt-api-db
+  DB_USER: weblogic
 # enable this flag to use knative serve to deploy the app
 knativeDeploy: false
 
@@ -93,3 +94,9 @@ jxRequirements:
     # shared ingress annotations on all services
     annotations:
     #  kubernetes.io/ingress.class: nginx
+receipt-api-db:
+  mysqlUser: weblogic
+  mysqlDatabase: receipt-api-db
+  existingSecret: receipt-api-db
+  persistence:
+    storageClass: do-block-storage

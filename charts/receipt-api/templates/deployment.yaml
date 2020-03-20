@@ -30,6 +30,13 @@ spec:
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         env:
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: receipt-api-db
+              key: mysql-password
+        - name: DB_URL
+          value: {{ template "fullname" . }}-db
 {{- range $pkey, $pval := .Values.env }}
         - name: {{ $pkey }}
           value: {{ quote $pval }}
