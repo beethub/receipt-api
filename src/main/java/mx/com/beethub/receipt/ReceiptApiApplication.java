@@ -7,7 +7,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 import java.util.Map;
 
-
 @SpringBootApplication
 @EnableFeignClients
 public class ReceiptApiApplication implements CommandLineRunner {
