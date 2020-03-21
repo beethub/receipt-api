@@ -16,7 +16,7 @@ public class ReceiptApiApplication implements CommandLineRunner {
 	}
 
 	@Override
-	public void run(String... args) throws Exception {
+	public void run(String... args) {
 		Map<String, String> env = System.getenv();
 		env.forEach((k, v) -> System.out.println(k + ":" + v));
 	}
