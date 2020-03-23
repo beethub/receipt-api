@@ -10,7 +10,7 @@ image:
 # define environment variables here as a map of key: value
 env:
   DB_NAME: receipt-api-db
-  DB_USER: root
+  DB_USER: weblogic
 # enable this flag to use knative serve to deploy the app
 knativeDeploy: false
 
