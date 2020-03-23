@@ -12,6 +12,10 @@ spring:
     username: ${DB_USER:local-user}
     password: ${DB_PASSWORD:local-pass}
   jpa:
+    hibernate:
+      ddl-auto: validate
+    generate-ddl: true
     show-sql: true
   flyway:
-    enabled: false
+    user: ${DB_USER:local-user}
+    password: ${DB_PASSWORD:local-pass}
