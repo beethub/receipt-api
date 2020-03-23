@@ -34,7 +34,7 @@ spec:
           valueFrom:
             secretKeyRef:
               name: receipt-api-db
-              key: mysql-password
+              key: mysql-root-password
         - name: DB_URL
           value: {{ template "fullname" . }}-db
 {{- range $pkey, $pval := .Values.env }}
