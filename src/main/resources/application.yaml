@@ -8,14 +8,14 @@ spring:
   application:
     name: receipt-api
   datasource:
-    url: jdbc:mysql://${DB_URL:localhost}/${DB_NAME:local-db}
-    username: ${DB_USER:local-user}
-    password: ${DB_PASSWORD:local-pass}
+    url: jdbc:mysql://${DB_URL:localhost}/${DB_NAME:receipt-db}
+    username: ${DB_USER:receipt-user}
+    password: ${DB_PASSWORD:receipt-pass}
   jpa:
     hibernate:
       ddl-auto: validate
     generate-ddl: true
     show-sql: true
   flyway:
-    user: ${DB_USER:local-user}
-    password: ${DB_PASSWORD:local-pass}
+    user: ${DB_USER:receipt-user}
+    password: ${DB_PASSWORD:receipt-pass}
